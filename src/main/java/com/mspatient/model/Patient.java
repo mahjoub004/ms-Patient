@@ -9,6 +9,7 @@ public class Patient {
     @Id
     @Column(name = "PatientId")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //@SequenceGenerator(name = "PATIENT_SEQ",sequenceName = "PATIENT_SEQ")
     private Integer id;
     private String firstName , lastName, gender ,adress, phone;
     private LocalDate birthday;

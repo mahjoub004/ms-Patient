@@ -12,9 +12,6 @@ public class PatientService {
     @Autowired
     private PatientRepository repository;
 
-    public void savePatientSansReturn(Patient patient){
-        repository.save(patient);
-    }
 
     public Patient savePatient(Patient patient){
         return repository.save(patient);//si n'existe pas < insert to > , si existe mis a jour <Update>
